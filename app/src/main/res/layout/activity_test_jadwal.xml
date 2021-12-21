@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/berandaprofil"
+    tools:context=".Test_jadwal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_weight="1.3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_weight="1.4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1.6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/backJadwal"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/btback"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingTop="45dp"
+                android:layout_marginRight="80dp"
+                android:gravity="center"
+                android:layout_weight="0.4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:gravity="bottom"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#FFFFFF"
+                    android:text="Jadwal"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:background="@drawable/radius"
+                android:layout_width="350dp"
+                android:layout_height="150dp">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:layout_weight="0.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextClock
+                        android:id="@+id/jam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:format24Hour="hh : mm"
+                        android:gravity="center"
+                        android:textSize="45dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:layout_weight="1.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/tanggaljad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:gravity="center"
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1.4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="0.4"
+            android:layout_width="350dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_weight="1.7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:background="#F0F0F0"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="#7BCB9D"
+                        android:gravity="center"
+                        android:text="List Kegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+<LinearLayout
+    android:paddingTop="15dp"
+    android:layout_weight="0.3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                            <TextView
+
+                                android:textColor="#000000"
+                                android:textSize="14dp"
+                                android:gravity="left"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text=""
+                                android:id="@+id/jaddesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+<!--                            <TextView-->
+<!--                                android:textColor="#000000"-->
+<!--                                android:textSize="14dp"-->
+<!--                                android:gravity="left"-->
+<!--                                android:paddingLeft="10dp"-->
+<!--                                android:text=""-->
+<!--                                android:id="@+id/jadwaktu"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"/>-->
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+    android:gravity="center"
+    android:layout_weight="1.2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+                <Button
+                    android:background="@drawable/btjadwal_new"
+                    android:onClick="get_protected_data"
+                    android:id="@+id/load2"
+                    android:layout_width="270dp"
+                    android:layout_height="48dp"/>
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

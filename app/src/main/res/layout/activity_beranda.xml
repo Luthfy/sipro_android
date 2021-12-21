@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:background="@drawable/berandaprofil"
+    tools:context=".Beranda">
+
+
+
+    <LinearLayout
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:gravity="right"
+        android:layout_weight="1.35"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:textColor="#FFFFFF"
+            android:text="Keluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:background="@drawable/btkeluar2"
+            android:id="@+id/logout"
+            android:layout_width="25dp"
+            android:layout_height="30dp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="0.80"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginBottom="20dp"
+                android:layout_width="132dp"
+                android:layout_height="135dp"
+                android:background="@drawable/logodprd" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="Dewan Perwakilan"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:textColor="#FFFFFF"
+                android:text="Rakyat Daerah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:text="Kabupaten Balangan"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="right"
+
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/btdewan"
+                    android:id="@+id/data"
+                    android:layout_width="180dp"
+                    android:layout_height="120dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="bottom"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/btjadwal"
+                    android:id="@+id/jadwal"
+                    android:layout_width="180dp"
+                    android:layout_height="120dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_weight="1.1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_gravity="top"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btpresensi"
+                    android:id="@+id/presensi"
+                    android:layout_width="180dp"
+                    android:layout_height="120dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btkehadiran"
+                    android:id="@+id/kehadiran"
+                    android:layout_width="180dp"
+                    android:layout_height="120dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1.35"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:text="Sekertariat DPRD Kabupaten Balangan"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:text=" Kantor : JL. Akhmad Yani Km 2,5 Paringin Kode Pos 71462 "
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:text="Fax (0526 ) 2028479, Telp. 2028700, 2028435"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    tools:context=".Login"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:background="@drawable/berandaprofil"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1.6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/backKehadiran"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/btback"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="34dp"
+                android:layout_marginRight="80dp"
+                android:gravity="center"
+                android:layout_weight="0.4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#FFFFFF"
+                    android:text="Kehadiran"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextClock
+                android:gravity="center"
+                android:id="@+id/jam"
+                android:textColor="@android:color/white"
+                android:textSize="50dp"
+                android:format24Hour="HH : mm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1.2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@android:color/white"
+                android:id="@+id/tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:background="@drawable/radius"
+            android:layout_width="350dp"
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:textSize="15dp"
+                    android:text="Jam Kerja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="08.00 - 17.00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:background="@drawable/button_custom_shape"
+                        android:id="@+id/in"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:background="@drawable/button_keluar_custom"
+                        android:id="@+id/out"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <LinearLayout
+
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:paddingTop="20dp"
+       android:paddingLeft="30dp"
+        android:layout_weight="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Log Kehadiran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+            <LinearLayout
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                //jam
+                <LinearLayout
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+
+                            android:fontFamily="@font/roboto"
+                            android:layout_gravity="center"
+                            android:paddingLeft="30dp"
+                            android:id="@+id/showClockIn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="#FFFFFF"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+
+                            android:fontFamily="@font/roboto"
+                            android:layout_gravity="center"
+                            android:paddingLeft="30dp"
+                            android:id="@+id/showClockOut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/tampilUserId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/att_type_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Clock In"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/att_type_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Clock Out"
+                    android:textColor="#FFFFFF" />
+
+
+                <TextView
+                    android:id="@+id/todaydate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/tYy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="YY" />
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/tMm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="MM" />
+
+                <TextView
+                    android:textColor="#FFFFFF"
+                    android:text="TO"
+                    android:id="@+id/timeOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+<!--                <TextView-->
+<!--                    android:text="TI"-->
+<!--                    android:id="@+id/timeIn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"/>-->
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/inputData"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+
+        <!--            android:ems="10"-->
+        <!--            android:inputType="textPersonName"-->
+        <!--            android:text="Name" />-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

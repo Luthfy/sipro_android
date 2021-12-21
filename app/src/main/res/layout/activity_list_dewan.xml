@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:background="@drawable/berandaprofil"
+    tools:context=".ListDewanActivity">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1.6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/backDataDewan"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btback"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingRight="85dp"
+                android:gravity="center"
+                android:layout_weight="0.4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#FFFFFF"
+                    android:text="Data Dewan"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="36dp"
+                android:text="Anggota DPRD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:text="Periode 2019 - 2024"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="45dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:text="Divisi"
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+
+                android:gravity="center"
+                android:background="@drawable/spinner_style"
+                android:layout_width="300dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:popupBackground="#FFFFFF"
+                    android:contextClickable="true"
+                    android:id="@+id/spDataDewan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:gravity="center"
+                android:background="@drawable/bt_caridewan"
+                android:id="@+id/btCariData"
+                android:layout_width="285dp"
+                android:layout_height="43dp"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_dewan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5"
+    tools:context=".Login"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--            <ImageView-->
+<!--                android:layout_marginLeft="70dp"-->
+<!--                android:src="@drawable/loginpanel"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/siprotitle">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:fontFamily="@font/titlefont"
+            android:textColor="@android:color/background_dark"
+            android:text="Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/loginNik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:fontFamily="@font/titlefont"
+            android:textColor="@android:color/background_dark"
+            android:text="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/loginPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10" />
+
+
+        <!--        <TextView-->
+<!--            android:fontFamily="@font/titlefont"-->
+<!--            android:id="@+id/signup"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:textColor="@color/lime"-->
+<!--            android:gravity="right"-->
+<!--            android:text="@string/lupapassword"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="13dp"-->
+<!--            />-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:fontFamily="@font/titlefont"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="top"
+            android:id="@+id/btlogin"
+            android:text="Masuk"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
