@@ -3,9 +3,12 @@ package com.sipro.mysipro.dewan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.sipro.mysipro.R;
 
 import java.util.ArrayList;
@@ -32,7 +35,7 @@ public class DewanAdapter extends RecyclerView.Adapter<DewanAdapter.DewanViewHol
         holder.txtJabatan.setText(dataList.get(position).getJabatanDewan());
 //        holder.txtNoHp.setText(dataList.get(position).getNohp());
 
-        Glide.with(this).load(dataList.get(position).getImageUrl).into(holder.imgDewan);
+        Glide.with(holder.itemView.getContext()).load(dataList.get(position).getImageUrl()).into(holder.imgDewan);
     }
 
     @Override
