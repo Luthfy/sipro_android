@@ -62,7 +62,7 @@ public class ListDewanActivity extends AppCompatActivity {
 
         txTampilNama = findViewById(R.id.tampilNama);
         txTampilSub = findViewById(R.id.tampilSub);
-        spStruktur = (Spinner) findViewById(R.id.spListDewanActivity);
+        spStruktur = (Spinner) findViewById(R.id.spDataDewan);
         btCari = findViewById(R.id.btCariData);
 
         final String isiStruktur[] = {
@@ -408,10 +408,14 @@ public class ListDewanActivity extends AppCompatActivity {
                                             JSONObject jo = new JSONObject(response);
                                             JSONArray arr = jo.getJSONArray("data");
 
-                                            Gson gson = new Gson();
+                                            ArrayList<Dewan> listData = new ArrayList<Dewan>();
+                                            if (arr != null) {
+                                                for (int i = 0; i < arr.length(); i++) {
+                                                    listData.add((Dewan) arr.get(i));
+                                                }
+                                            }
 
-                                            ArrayList<Dewan> data_dewan = gson.fromJson(arr);
-                                            setRecyclerView(data_dewan);
+                                            setRecyclerView(listData);
 
                                             String nama = "";
                                             String sub = "";
